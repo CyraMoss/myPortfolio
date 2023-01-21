@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
+:root {
+  --primary-font: 'Abril Fatface', cursive;
+  --primary-colour: #ffffffe8;
+  --secondary-colour: rgba(255, 247, 0, 0.873);
+  --hover-color: #91ff00;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: '/images/bgpic.jpg';
+  background-size: cover;
+  resize: both;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  position: fixed;
+  top: 0px;
+  left: 28px;
+  right: 28px;
+  z-index: 11;
+  max-height: 55px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a:link {
+  color: var(--primary-colour);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: var(--primary-colour);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+}
+a:hover {
+  color: var(--hover-color);
+}
+.app {
+  backdrop-filter: blur(5px);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+h1,
+h2 {
+  margin-left: 50px;
+  font-family: var(--primary-font);
+  color: var(--primary-colour);
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+h1 {
+  margin-top: 10%;
+  color: var(--primary-colour);
+  font-size: 100px;
+}
+h2:hover {
+  animation: 3s infinite alternate slidein;
+}
+.title {
+  align-self: center;
+  gap: 10px;
+}
+header [class*='wrap-header'] nav[class*='main-navigation'] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+a {
+  padding-right: 20px;
+}
+ul {
+  display: block;
+  list-style: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+nav {
+  margin: 0;
+  border: 0;
+  font: inherit;
+}
+.main-navigation {
+  height: 80px;
+  align-self: center;
+}
+#main-menu {
+  align-self: center;
+}
+header
+  [class*='wrap-header']
+  nav[class*='main-navigation']
+  [class*='title']
+  a
+  + span {
+  font-family: 'Neue Montreal', sans-serif;
+  color: #f5eee6;
+  text-transform: uppercase;
+}
+h6,
+[class*='h6'] {
+  font-size: 1rem;
+}
+#header {
+  opacity: 1;
+}
+span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+header [class*='wrap-header'] nav[class*='main-navigation'] #main-menu ul li {
+  display: inline-block;
+  margin-left: 0.5rem;
+  position: relative;
+}
+[class*='h6'] {
+  font-weight: 500;
+  line-height: 1;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes slidein {
   from {
-    transform: rotate(0deg);
+    margin-left: 100%;
+    width: 300%;
   }
+
   to {
-    transform: rotate(360deg);
+    margin-left: 50px;
+    width: 100%;
   }
+}
+.homepic {
+  width: 100%;
+  border-radius: 2%;
+  border: 4px double var(--primary-colour);
+}
+.picbox {
+  width: 300px;
+  margin-right: 5%;
+}
+h3 {
+  font-size: 70px;
+  gap: 20px;
+  font-family: var(--primary-font);
+}
+.pc {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  color: var(--primary-colour);
+}
+.cicon {
+  animation: wiggle 2s linear infinite;
+}
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+p {
+  font-size: 100px;
+  color: #000;
 }
