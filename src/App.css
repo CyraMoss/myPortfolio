@@ -3,11 +3,13 @@
   --primary-colour: #ffffffe8;
   --secondary-colour: rgba(255, 247, 0, 0.873);
   --hover-color: #91ff00;
+  --secondary-font: 'IBM Plex Mono';
 }
 body {
   background-image: '/images/bgpic.jpg';
   background-size: cover;
   resize: both;
+  color: var(--primary-colour);
 }
 header {
   position: fixed;
@@ -35,26 +37,59 @@ a:hover {
   color: var(--hover-color);
 }
 .app {
-  backdrop-filter: blur(5px);
   display: flex;
   justify-content: space-between;
   margin-top: 10%;
 }
+.margin10 {
+  margin-top: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 5%;
+}
+.blur {
+  backdrop-filter: blur(15px);
+}
+.border {
+  border: 4px double var(--primary-colour);
+  border-radius: 1em;
+}
+.center {
+  text-align: center;
+}
 h1,
 h2 {
-  margin-left: 50px;
   font-family: var(--primary-font);
-  color: var(--primary-colour);
   animation-duration: 2s;
   animation-name: slidein;
 }
-h1 {
-  margin-top: 10%;
-  color: var(--primary-colour);
-  font-size: 100px;
+.btn:hover {
+  background-color: var(--hover-color);
 }
-h2:hover {
-  animation: 3s infinite alternate slidein;
+.margin1 {
+  margin: 1em;
+}
+hr {
+  background-color: var(--primary-colour);
+  opacity: 0.5;
+}
+.pimg {
+  width: 100%;
+}
+.contactme1 {
+  font-family: var(--secondary-font);
+  font-size: 50px;
+  margin-top: 50px;
+}
+.workpic {
+  width: 100%;
+}
+p {
+  font-size: 25px;
+  font-family: var(--secondary-font);
+}
+h1 {
+  font-size: 100px;
 }
 .title {
   align-self: center;
@@ -137,10 +172,21 @@ header [class*='wrap-header'] nav[class*='main-navigation'] #main-menu ul li {
     width: 100%;
   }
 }
-.homepic {
+.homepic,
+.homeinfo,
+.workcard {
   width: 100%;
-  border-radius: 2%;
+  border-radius: 1em;
   border: 4px double var(--primary-colour);
+}
+.bio {
+  margin-top: 2em;
+}
+.homeinfo {
+  width: 50%;
+  backdrop-filter: blur(5px);
+  margin-left: 2%;
+  padding-left: 2%;
 }
 .picbox {
   width: 300px;
@@ -148,7 +194,6 @@ header [class*='wrap-header'] nav[class*='main-navigation'] #main-menu ul li {
 }
 h3 {
   font-size: 70px;
-  gap: 20px;
   font-family: var(--primary-font);
 }
 .pc {
@@ -184,8 +229,4 @@ h3 {
   100% {
     transform: rotateZ(0);
   }
-}
-p {
-  font-size: 100px;
-  color: #000;
 }

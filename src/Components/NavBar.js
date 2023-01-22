@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
   return (
@@ -14,13 +15,13 @@ export default function NavBar() {
           <div id="main-menu">
             <ul>
               <li className="h6">
-                <a href="/">Work</a>
+                <Link to="/work">Work</Link>
               </li>
               <li className="h6">
-                <a href="AboutScreen.js">About</a>
+                <Link to="/about">About</Link>
               </li>
               <li className="h6">
-                <a href="#contact">Contact</a>
+                <a href="/contact">Contact</a>
               </li>
             </ul>
           </div>
