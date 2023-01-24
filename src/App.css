@@ -69,6 +69,10 @@ h2 {
 .margin1 {
   margin: 1em;
 }
+.aboutp {
+  padding-left: 2%;
+  padding-right: 40%;
+}
 hr {
   background-color: var(--primary-colour);
   opacity: 0.5;
