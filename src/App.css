@@ -122,9 +122,19 @@ button:hover {
   color: var(--hover-color);
   letter-spacing: 1px;
 }
+.middle {
+  display: flex;
+  margin-top: 5%;
+  justify-content: center;
+}
+.label {
+  color: var(--hover-color);
+  display: flex;
+  padding-left: 2%;
+}
 form {
-  width: 80%;
-  height: 500px;
+  width: 70%;
+  height: 350px;
   border-radius: 20px;
   padding: 40px;
   box-sizing: border-box;

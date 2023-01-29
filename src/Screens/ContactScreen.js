@@ -31,14 +31,15 @@ export default function ContactScreen() {
             </a>
           </li>
         </ul>
-        <form className="center">
-          <div className="message-title">Please share FeedBack</div>
-          <label>Message</label>
-          <input type="text" placeholder="Write me a message/Feedback here" />
-          <button type="Submit">Send</button>
-        </form>
+        <div className="middle">
+          <form className="center">
+            <div className="message-title">Please share FeedBack</div>
+            <label className="label">Message</label>
+            <input type="text" placeholder="Write me a message/Feedback here" />
+            <button type="Submit">Send</button>
+          </form>
+        </div>
       </div>
-      <ContactCard />
     </div>
   );
 }
