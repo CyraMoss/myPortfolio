@@ -3,7 +3,7 @@ import React from 'react';
 export default function ContactCard() {
   return (
     <div className="pc">
-      <h3>
+      <h3 className="smallerfont">
         Let's Talk
         <a href="https://www.facebook.com" target="blank">
           <i className="fa-brands fa-facebook cicon"></i>

@@ -3,7 +3,7 @@ import React from 'react';
 export default function ProjectScreen() {
   return (
     <div className="margin10 row">
-      <div className="col-4">
+      <div className="col-4 picturesproject">
         <img className="pimg border" src="./images/work3.png" alt="mee"></img>
         <img className="pimg border" src="./images/work2.png" alt="mee"></img>
         <img className="pimg border" src="./images/work1.png" alt="mee"></img>
@@ -11,7 +11,7 @@ export default function ProjectScreen() {
       <div className="col blur border">
         <h2 className="center">NZ Noiz</h2>
         <div className="projectinfo">
-          <p>
+          <p className="projectp">
             This project uses MERN stack <br />
             <strong>Some skills in this project are:</strong>
             <ul>

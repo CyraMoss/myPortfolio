@@ -8,7 +8,7 @@ export default function WorkCard() {
     navigate('/project');
   };
   return (
-    <div className="workcard col-4">
+    <div className="workcard ">
       <img className="workpic" src="./images/work.png" alt="mee"></img>
       <div className="workinfo">
         <h3 className="center">NZ Noiz</h3>

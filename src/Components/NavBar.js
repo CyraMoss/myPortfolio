@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function NavBar() {
+  const openmenu = () => {
+    let r = document.querySelector(':root');
+    let rs = getComputedStyle(r);
+
+    if (rs.getPropertyValue('--display') === 'none')
+      r.style.setProperty('--display', 'flex');
+    else r.style.setProperty('--display', 'none');
+  };
   return (
     <header id="header">
       <div className="wrap-header--padding-sm">
@@ -24,6 +32,31 @@ export default function NavBar() {
                 <a href="/contact">Contact</a>
               </li>
             </ul>
+          </div>
+          <div className="togglemenu">
+            <nav>
+              <button onClick={openmenu} className="menu_button">
+                Menu
+              </button>
+
+              <ul className="menu menu-background col">
+                <li className="menu_button row">
+                  <a href="/">
+                    <span className="h6">Cyra Moss</span>
+                  </a>
+                </li>
+                <li className="menu_button row"></li>
+                <li className="menu_button row">
+                  <Link to="/work">Work</Link>
+                </li>
+                <li className="menu_button row">
+                  <Link to="/about">About</Link>
+                </li>
+                <li className="menu_button row">
+                  <Link to="/contact">Contact</Link>
+                </li>
+              </ul>
+            </nav>
           </div>
         </nav>
       </div>

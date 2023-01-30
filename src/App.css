@@ -4,6 +4,52 @@
   --secondary-colour: rgba(41, 41, 41, 0.873);
   --hover-color: #91ff00;
   --secondary-font: 'IBM Plex Mono';
+  --display: none;
+}
+@media (min-width: 800px) {
+  .togglemenu {
+    display: none;
+  }
+  .margin10 {
+    margin-top: 10%;
+  }
+  .aboutp {
+    padding-left: 2%;
+    padding-right: 40%;
+  }
+}
+.menu-background {
+  background-color: black;
+  color: var(--hover-color);
+  font-family: fantasy;
+}
+.menu_button:hover {
+  background-color: #333;
+  color: var(--primary-color);
+}
+@media (max-width: 800px) {
+  #main-menu {
+    display: none;
+  }
+  .aboutp {
+    padding-right: 0%;
+  }
+  .title {
+    display: none;
+  }
+  .margin10 {
+    margin-top: 15%;
+  }
+  .menu {
+    display: var(--display);
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.togglemenu {
+  width: 25%;
+  justify-content: end;
 }
 body {
   background-image: '/images/bgpic.jpg';
@@ -41,8 +87,66 @@ a:hover {
   justify-content: space-between;
   margin-top: 10%;
 }
+@media only screen and (max-width: 1200px) {
+  .work {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .work {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .work {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .app {
+    margin-top: 15%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .picturesproject {
+    display: none;
+  }
+  .projectp {
+    font-size: 20px;
+  }
+  .contactme1 {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  .homeinfo {
+    margin: 0;
+    width: 80%;
+  }
+  .picbox {
+    display: none;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .homeinfo {
+    margin: 0;
+    width: 50%;
+  }
+  .contactme1 {
+    font-size: 50px;
+  }
+  h1 {
+    font-size: 100px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .smallerfont {
+    font-size: 40px;
+  }
+}
 .margin10 {
-  margin-top: 10%;
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 5%;
@@ -147,10 +251,7 @@ form {
 .margin1 {
   margin: 1em;
 }
-.aboutp {
-  padding-left: 2%;
-  padding-right: 40%;
-}
+
 hr {
   background-color: var(--primary-colour);
   opacity: 0.5;
@@ -160,7 +261,6 @@ hr {
 }
 .contactme1 {
   font-family: var(--secondary-font);
-  font-size: 50px;
   margin-top: 50px;
 }
 .workpic {
@@ -169,9 +269,6 @@ hr {
 p {
   font-size: 25px;
   font-family: var(--secondary-font);
-}
-h1 {
-  font-size: 100px;
 }
 .title {
   align-self: center;
@@ -255,20 +352,23 @@ header [class*='wrap-header'] nav[class*='main-navigation'] #main-menu ul li {
   }
 }
 .homepic,
-.homeinfo,
 .workcard {
   width: 100%;
   border-radius: 1em;
   border: 4px double var(--primary-colour);
 }
+.work {
+  display: grid;
+}
 .bio {
   margin-top: 2em;
 }
 .homeinfo {
-  width: 50%;
   backdrop-filter: blur(5px);
   margin-left: 2%;
   padding-left: 2%;
+  border-radius: 1em;
+  border: 4px double var(--primary-colour);
 }
 .picbox {
   width: 300px;
