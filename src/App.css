@@ -79,7 +79,8 @@ label:nth-of-type(2) {
 }
 label,
 input,
-button {
+button,
+textarea {
   display: block;
   width: 100%;
   padding: 0;
@@ -87,11 +88,13 @@ button {
   outline: none;
   box-sizing: border-box;
 }
-.inputs {
+.inputs,
+textarea {
   text-align: left;
   margin-top: 30px;
 }
-input {
+input,
+textarea {
   background: #ecf0f3;
   padding: 10px;
   padding-left: 20px;

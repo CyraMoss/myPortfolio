@@ -1,6 +1,4 @@
 import React from 'react';
-import { Form } from 'react-router-dom';
-import ContactCard from '../Components/ContactCard';
 
 export default function ContactScreen() {
   return (
@@ -32,10 +30,24 @@ export default function ContactScreen() {
           </li>
         </ul>
         <div className="middle">
-          <form className="center">
+          <form
+            className="center"
+            action="https://formsubmit.co/cyramoss@icloud.com"
+            method="POST"
+          >
             <div className="message-title">Please share FeedBack</div>
-            <label className="label">Message</label>
-            <input type="text" placeholder="Write me a message/Feedback here" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              type="text"
+              name="message"
+              placeholder="Write me a message/Feedback here"
+              required
+            />
             <button type="Submit">Send</button>
           </form>
         </div>
