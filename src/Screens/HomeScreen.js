@@ -23,6 +23,7 @@ export default function HomeScreen() {
       <div className="picbox">
         <img className="homepic" src="./images/me.png" alt="mee"></img>
       </div>
+
       <ContactCard />
     </div>
   );
