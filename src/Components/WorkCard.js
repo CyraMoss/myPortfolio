@@ -17,7 +17,7 @@ export default function WorkCard() {
             <strong>This is a MERN stack e-commerce project</strong>
             <br />
             <span>to visit project </span>{' '}
-            <a href="https://nznoizcyra.herokuapp.com/?fbclid=IwAR32eRusmM2WCDpiU7KDXC6VQpIwAj6PCqdupmqM2lKDld51sZD8dUOKOwc">
+            <a href="https://comforting-fudge-6d0f12.netlify.app/">
               click here
             </a>
             <button className="btn" onClick={moreinfo}>
