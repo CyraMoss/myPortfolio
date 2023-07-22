@@ -29,28 +29,7 @@ export default function ContactScreen() {
             </a>
           </li>
         </ul>
-        <div className="middle">
-          <form
-            className="center"
-            action="https://formsubmit.co/cyramoss@icloud.com"
-            method="POST"
-          >
-            <div className="message-title">Please share FeedBack</div>
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-            <textarea
-              type="text"
-              name="message"
-              placeholder="Write me a message/Feedback here"
-              required
-            />
-            <button type="Submit">Send</button>
-          </form>
-        </div>
+
       </div>
     </div>
   );

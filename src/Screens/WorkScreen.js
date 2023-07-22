@@ -11,8 +11,12 @@ export default function WorkScreen() {
       <p className='padding'>
         This project showcases my skills in Full Stack development.
       </p>
+      <h6>Choose what information you would like to know:</h6>
+      <a href='#problems'>
+      <button>The problems it fixes</button></a><a href='#features'>
+      <button>key features I added</button></a>
       <hr/>
-      <div>
+      <div id='problems'>
       <h2 className='marginright1 green'>what problem does ProperTEasy solve?</h2>
       <ul className='marginright1'>
         <li>
@@ -74,6 +78,7 @@ export default function WorkScreen() {
         all stakeholders involved.</h6>
       </div>
       <hr/>
+      <div id='features'>
       <h2 className='marginright1 green'>Here are some key features I made to the project:</h2>
       <ul className='marginright1'>
         <li>
@@ -129,6 +134,7 @@ export default function WorkScreen() {
        </h6>
           </li>
       </ul>
+      </div>
     </div>
   );
 }
