@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ContactCard() {
   return (
-    <div className="pc">
+    <div className="pc dontshow">
       <h3 className="smallerfont">
         Let's Talk
         <a href="https://www.facebook.com" target="blank">

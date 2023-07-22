@@ -5,8 +5,8 @@ export default function WorkScreen() {
     <div className="blur border margin10">
       <h1 className="center">My Work</h1>
       <hr />
-      <div className="flex padding">
-        <h2 className='green'><a href="https://www.properteasy.co.nz">ProperTEasy</a></h2> <h6 className='green'>{`<< Click here to go to the website`}</h6>
+      <div className="flex padding green">
+        <h2 ><a href="https://www.properteasy.co.nz">ProperTEasy</a></h2> <h6>{`<< Click here to go to the website`}</h6>
       </div>
       <p className='padding'>
         This project showcases my skills in Full Stack development.

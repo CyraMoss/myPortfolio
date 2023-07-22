@@ -39,20 +39,19 @@ export default function NavBar() {
                 Menu
               </button>
 
-              <ul className="menu menu-background col">
-                <li className="menu_button row">
+              <ul className="menu menu-background  col">
+                <li className=" ow">
                   <a href="/">
-                    <span className="h6">Cyra Moss</span>
+                    <span className="h6">Home</span>
                   </a>
                 </li>
-                <li className="menu_button row"></li>
-                <li className="menu_button row">
+                <li className=" rw">
                   <Link to="/work">Work</Link>
                 </li>
-                <li className="menu_button row">
+                <li className="mow">
                   <Link to="/about">About</Link>
                 </li>
-                <li className="menu_button row">
+                <li className=" ow">
                   <Link to="/contact">Contact</Link>
                 </li>
               </ul>
