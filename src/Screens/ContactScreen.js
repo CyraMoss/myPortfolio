@@ -12,8 +12,8 @@ export default function ContactScreen() {
         <hr />
         <ul>
           <li className="contactme1">
-            <a href="tel:+64223276022">
-              <i className="fa-solid fa-phone "></i>Phone me on 0223276022
+            <a href="tel:+64221538559">
+              <i className="fa-solid fa-phone "></i>Phone me on 0221538559
             </a>
           </li>
           <li className="contactme1">
@@ -23,9 +23,9 @@ export default function ContactScreen() {
             </a>
           </li>
           <li className="contactme1">
-            <a href="https://www.facebook.com/mynameaintkyraa">
-              <i className="fa-brands fa-facebook "></i>
-              Give me a message on Facebook
+            <a href="https://www.linkedin.com/in/cyra-moss-222696206/">
+              <i className="fa-brands fa-linkedin "></i> 
+              Give me a message on LinkedIn
             </a>
           </li>
         </ul>

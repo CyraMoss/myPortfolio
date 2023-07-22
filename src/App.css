@@ -412,3 +412,21 @@ h3 {
     transform: rotateZ(0);
   }
 }
+.marginright1 {
+  margin-right: 3%;
+  text-align: center;
+}
+.padding {
+  padding-left: 2%;
+}
+.small {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.green {
+  color: #91ff00;
+}

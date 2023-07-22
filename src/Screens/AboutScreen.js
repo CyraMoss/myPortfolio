@@ -4,24 +4,35 @@ export default function AboutScreen() {
   return (
     <div className=" blur border margin10">
       <h1 className="center">About Me</h1> <hr />
-      <p className="aboutp">
-        Hi! my name is Cyra, i'm a 26 years old Front-End software Developer
-        from Auckland, New Zealand. <br />
-        When I started thinking about what I wanted to do for a career I thought
-        about something to do with computers straight away. I was trying to find
-        something I would enjoy so I tried a level 3 computing course and liked
-        it so much I did level 4 & 5 aswell.
+      <p className="center">
+      Hello there! I'm Cyra, a passionate and driven software developer with a strong
+       foundation in web development. I hold Level 5 & 6 certificates from the esteemed Mission Ready
+        Professional Software Developer courses, which have equipped me with a solid understanding
+         of industry best practices and cutting-edge technologies.
         <br />
-        When I decided to do software development I came across a course called
-        SheCodes, so I signed up!
+        <br/>
+        During my academic journey, I had the incredible opportunity to gain practical experience
+         through an internship, where I contributed to an online learning platform project for Dacreed.
         <br />
-        SheCodes is an all female coding bootcamp, they taught me about HTML,
-        CSS, JS, API's, GitHub, Bootstrap, Hosting, SEO, Responsive and React. I
-        did all their courses and it was super fun.
-        <br /> After SheCodes I started Misson Ready which is an advanced
-        software developer Acellorator. they taught me alot about agile mindset
-        and practices, Devops and automated deployment, cloud servises, Design
-        Thinking and more
+        <br />
+        Inspired by my passion for creating impactful solutions, I embarked on a personal project called
+         PropertEasy, a full-stack property website aimed at revolutionizing the rental experience for
+          landlords and tenants. As the project lead, I have honed my skills in TypeScript, Trpc, and
+         frontend technologies to deliver a seamless and user-friendly platform.
+        <br /> 
+        <br />
+        My experiences have instilled in me a strong commitment to continuous learning and improvement. 
+        I embrace challenges as opportunities to grow, always seeking innovative ways to refine my coding
+         abilities and stay up -to-date with the rapidly evolving tech landscape.
+         <br/>
+        <br />
+         I am enthusiastic about collaborating with talented teams to create impactful software solutions
+          that make a difference. If you're looking for a dedicated and motivated developer who thrives in
+           dynamic environments, I'd love to connect and explore potential opportunities to contribute my
+           skills and passion.
+           <br/>
+        <br />
+           Thank you for visiting my portfolio, and I look forward to connecting with you soon!
       </p>
     </div>
   );

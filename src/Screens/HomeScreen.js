@@ -8,10 +8,10 @@ export default function HomeScreen() {
         <h1>Hi, I'm Cyra</h1>
         <h2>Software Developer from Auckland, New Zealand</h2>
         <p className="bio">
-          Come check out my portfolio
+          Thanks for checking out my portfolio!
           <br />
           for my latest project{' '}
-          <a href="https://nznoizcyra.herokuapp.com/?fbclid=IwAR32eRusmM2WCDpiU7KDXC6VQpIwAj6PCqdupmqM2lKDld51sZD8dUOKOwc">
+          <a href="https://properteasy.co.nz">
             click here!
           </a>
         </p>
@@ -21,7 +21,7 @@ export default function HomeScreen() {
         </p>
       </div>
       <div className="picbox">
-        <img className="homepic" src="./images/me.png" alt="mee"></img>
+        <img className="homepic" src="./images/me.JPG" alt="mee"></img>
       </div>
 
       <ContactCard />
