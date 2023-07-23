@@ -218,7 +218,7 @@ button {
   border-radius: 20px;
   cursor: pointer;
   font-weight: 900;
-  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  box-shadow: 2px 2px 2px #0053a6, -2px -1px 1px rgb(91, 113, 255);
   transition: 0.5s;
 }
 
