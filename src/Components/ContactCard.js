@@ -14,8 +14,8 @@ export default function ContactCard() {
         <a href="tel:+64221656290">
           <i className="fa-solid fa-phone cicon"></i>
         </a>
-        <a href="https://www.instagram.com">
-          <i class="fa-brands fa-instagram cicon"></i>
+        <a href="https://www.linkedin.com/in/cyra-moss-222696206/">
+              <i className="fa-brands fa-linkedin cicon"></i> 
         </a>
       </h3>
     </div>
